@@ -39,9 +39,19 @@
     </div>
   </footer>
   <script>
-    const hamburger = document.querySelector('.fa-bars');
+    const hamburger = document.querySelector('.fas');
+    let clicked = false;
     hamburger.addEventListener('click', () => {
-      console.log('hamburger has been clicked!');
+
+      clicked = !clicked;
+      console.log(clicked);
+      if(clicked) {
+        hamburger.setAttribute('class', 'fas fa-times');
+        navList.setAttribute('class', 'nav-links-s');
+      } else {
+        hamburger.setAttribute('class', 'fas fa-bars');
+        navList.className += ' hide';
+      }
     });
 
     // Match media queries
@@ -66,7 +76,7 @@
         navList.setAttribute('class', 'nav-links-l');
         navigation.appendChild(navList);
       } else {
-        navList.setAttribute('class', 'nav-links-s');
+
         body.insertBefore(navList, header);
       }
     }
