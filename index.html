@@ -46,13 +46,16 @@
       clicked = !clicked;
       console.log(clicked);
       if(clicked) {
+        // change hamburger icon into cross
         hamburger.setAttribute('class', 'fas fa-times');
-        navList.setAttribute('class', 'nav-links-s');
+        navList.setAttribute('class', 'nav-links-s show');
       } else {
+        // change cross icon into hamburger icon
         hamburger.setAttribute('class', 'fas fa-bars');
-        navList.className += ' hide';
+        navList.setAttribute('class', 'nav-links-s');
       }
     });
+
 
     // Match media queries
     const navigation = document.querySelector('.navigation');
@@ -60,6 +63,7 @@
     const body =  document.querySelector('body');
     const links = ['Home', 'About', 'Projects', 'Contact'];
     const navList = document.createElement('ul');
+
 
     for(let i = 0; i < links.length; i++) {
       let link = document.createElement('li');
@@ -76,7 +80,7 @@
         navList.setAttribute('class', 'nav-links-l');
         navigation.appendChild(navList);
       } else {
-
+        navList.setAttribute('class', 'nav-links-s');
         body.insertBefore(navList, header);
       }
     }

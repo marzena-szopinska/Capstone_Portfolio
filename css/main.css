@@ -376,8 +376,9 @@ h1 {
   left: 0;
   z-index: 1000;
   padding-top: 5.45rem;
-  animation: fadeInRight 1s ease-out;
-  backface-visibility: hidden;
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: transform 1s ease, opacity 0.5s linear;
 }
 .nav-links-s .active {
   color: #C2A06D;
@@ -388,9 +389,10 @@ h1 {
   font-size: 1.25rem;
 }
 
-.hide {
-  animation: fadeInLeft 1s ease-out;
-  backface-visibility: hidden;
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0s;
 }
 
 @keyframes fadeInRight {

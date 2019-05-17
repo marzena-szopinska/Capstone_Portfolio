@@ -11,6 +11,7 @@
 }
 
 .nav-links-s {
+
   background-color: $black-color;
   width: 65vw;
   height: 100vh;
@@ -20,9 +21,11 @@
   left: 0;
   z-index: 1000;
   padding-top: 5.45rem;
-  animation: fadeInRight 1s ease-out;
-  backface-visibility: hidden;
 
+  opacity: 0;
+  transform: translateX(-300px);
+
+  transition: transform 1s ease, opacity .5s linear;
 
   .active {
     color: $gold-color;
@@ -35,9 +38,10 @@
   }
 }
 
-.hide {
-  animation: fadeInLeft 1s ease-out;
-  backface-visibility: hidden;
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0s;
 }
 
 // Animation
