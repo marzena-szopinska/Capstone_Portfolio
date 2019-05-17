@@ -1,0 +1,5 @@
+header {
+  color: $white-color;
+  background-color: $black-color;
+  @include fixed;
+}
