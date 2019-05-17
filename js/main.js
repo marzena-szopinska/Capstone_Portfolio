@@ -17,6 +17,7 @@ hamburger.addEventListener('click', () => {
 
 
 const navigation = document.querySelector('.navigation');
+const container = navigation.children[0];
 const header = document.querySelector('header');
 const body =  document.querySelector('body');
 const links = ['Home', 'About', 'Projects', 'Contact'];
@@ -39,7 +40,7 @@ for(let i = 0; i < links.length; i++) {
 function adjust(media) {
   if (media.matches) {
     navList.setAttribute('class', 'nav-links-l');
-    navigation.appendChild(navList);
+    container.appendChild(navList);
     hamburger.style.display = 'none';
   } else {
     navList.setAttribute('class', 'nav-links-s');
@@ -51,14 +52,3 @@ function adjust(media) {
 var media = window.matchMedia("(min-width: 1024px)")
 adjust(media);
 media.addListener(adjust);
-
-
-// AJAX REQUEST
-// let xhr = new XMLHttpRequest();
-// xhr.onreadystatechange = function() {
-//   if(xhr.readyState === 4) {
-//     document.getElementById('content').innerHTML = xhr.responseText;
-//   }
-// }
-// xhr.open('GET', 'about.html');
-// xhr.send();
