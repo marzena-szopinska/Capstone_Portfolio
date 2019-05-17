@@ -5,27 +5,30 @@
     color: $white-color;
   }
    .nav-links-l {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
 
+      }
    }
-
 }
 
 .nav-links-s {
-
   background-color: $black-color;
-  width: 65vw;
+  width: 50vw;
   height: 100vh;
   color: white;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1000;
-  padding-top: 5.45rem;
-
+  @include space-inside($top: 5.45rem);
+  // animate opacity and transform
   opacity: 0;
   transform: translateX(-300px);
-
-  transition: transform 1s ease, opacity .5s linear;
+  transition: transform .5s linear, opacity .25s linear;
 
   .active {
     color: $gold-color;
@@ -33,36 +36,13 @@
 
   li {
     font-style: italic;
-    padding: 1.45rem;
+    @include space-inside($top: 1.45rem, $right: 1.45rem, $bottom: 1.45rem, $left: 1.45rem);
     font-size: 1.25rem;
   }
 }
 
 .show {
+  // show the navigation menu
   opacity: 1;
   transform: translateX(0);
-  transition-delay: 0s;
-}
-
-// Animation
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-
-  }
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
 }

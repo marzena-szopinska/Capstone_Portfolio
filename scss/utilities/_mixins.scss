@@ -14,6 +14,13 @@
   padding-left: $left;
 }
 
+@mixin space-outside($top:null, $right:null, $bottom:null, $left:null){
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
 @mixin center-content($top: 50%) {
   position: absolute;
   top: $top;

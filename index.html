@@ -66,12 +66,15 @@
 
 
     for(let i = 0; i < links.length; i++) {
-      let link = document.createElement('li');
+      let item = document.createElement('li');
+      let link = document.createElement('a');
+      link.setAttribute('href', '#');
+      item.appendChild(link);
       if(links[i] === 'Home'){
         link.className += 'active';
       }
       link.innerHTML = links[i];
-      navList.appendChild(link);
+      navList.appendChild(item);
     }
 
 
@@ -79,13 +82,15 @@
       if (media.matches) {
         navList.setAttribute('class', 'nav-links-l');
         navigation.appendChild(navList);
+        hamburger.style.display = 'none';
       } else {
         navList.setAttribute('class', 'nav-links-s');
         body.insertBefore(navList, header);
+        hamburger.style.display = 'block';
       }
     }
 
-    var media = window.matchMedia("(min-width: 768px)")
+    var media = window.matchMedia("(min-width: 1024px)")
     adjust(media);
     media.addListener(adjust);
   </script>
