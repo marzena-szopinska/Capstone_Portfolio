@@ -382,6 +382,12 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+.navigation .nav-links-l li {
+  font-style: italic;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 .nav-links-s {
   background-color: #080400;
   width: 50vw;
@@ -396,9 +402,6 @@ h1 {
   transform: translateX(-300px);
   transition: transform 0.5s linear, opacity 0.25s linear;
 }
-.nav-links-s .active {
-  color: #C2A06D;
-}
 .nav-links-s li {
   font-style: italic;
   padding-top: 1.45rem;
@@ -406,6 +409,10 @@ h1 {
   padding-bottom: 1.45rem;
   padding-left: 1.45rem;
   font-size: 1.25rem;
+}
+
+.active {
+  color: #C2A06D;
 }
 
 .show {
