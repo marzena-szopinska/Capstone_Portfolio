@@ -347,8 +347,13 @@ body {
   position: relative;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
+  line-height: 1;
+  letter-spacing: 1px;
 }
 
+.navigation {
+  text-align: right;
+}
 .navigation .fa-bars {
   font-size: 2rem;
   color: #faf6e9;
@@ -392,17 +397,33 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/main.jpg") no-repeat center;
   background-size: cover;
 }
-main #content {
+main .container {
+  /* add dotted overlay */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC") repeat;
+}
+main .container #content {
   position: absolute;
   top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main h1 {
+main .container #content .intro p {
+  color: #C2A06D;
+  font-style: italic;
+}
+main .container #content .intro h1 {
   color: #faf6e9;
   text-transform: uppercase;
-  font-size: 2rem;
-  /*font-weight: 200;*/
+  font-size: 3rem;
+}
+main .container #content .intro h3 {
+  text-transform: uppercase;
+  color: #faf6e9;
+  font-weight: 200;
+}
+main .container #content .next .plus {
+  font-size: 3rem;
+  color: #faf6e9;
 }
 
 /*# sourceMappingURL=main.css.map */
