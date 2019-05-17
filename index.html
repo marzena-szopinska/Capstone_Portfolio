@@ -11,16 +11,11 @@
   <title>Capstone Portfolio</title>
 </head>
 <body>
+
   <header>
     <div class="container">
       <div class="navigation">
         <i class="fas fa-bars"></i>
-        <ul style='display:none'>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
       </div>
     </div>
   </header>
@@ -43,5 +38,42 @@
       <p>&copy; 2019 by <span class="f-name">Marzena Szopinska</span></p>
     </div>
   </footer>
+  <script>
+    const hamburger = document.querySelector('.fa-bars');
+    hamburger.addEventListener('click', () => {
+      console.log('hamburger has been clicked!');
+    });
+
+    // Match media queries
+    const navigation = document.querySelector('.navigation');
+    const header = document.querySelector('header');
+    const body =  document.querySelector('body');
+    const links = ['Home', 'About', 'Projects', 'Contact'];
+    const navList = document.createElement('ul');
+
+    for(let i = 0; i < links.length; i++) {
+      let link = document.createElement('li');
+      if(links[i] === 'Home'){
+        link.className += 'active';
+      }
+      link.innerHTML = links[i];
+      navList.appendChild(link);
+    }
+
+
+    function adjust(media) {
+      if (media.matches) {
+        navList.setAttribute('class', 'nav-links-l');
+        navigation.appendChild(navList);
+      } else {
+        navList.setAttribute('class', 'nav-links-s');
+        body.insertBefore(navList, header);
+      }
+    }
+
+    var media = window.matchMedia("(min-width: 768px)")
+    adjust(media);
+    media.addListener(adjust);
+  </script>
 </body>
 </html>

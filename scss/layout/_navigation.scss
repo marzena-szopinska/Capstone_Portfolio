@@ -4,4 +4,28 @@
     font-size: 2rem;
     color: $white-color;
   }
+
+
+}
+
+.nav-links-s {
+  background-color: $black-color;
+  width: 65vw;
+  height: 100vh;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding-top: 5.45rem;
+
+  .active {
+    color: $gold-color;
+  }
+
+  li {
+    font-style: italic;
+    padding: 1.45rem;
+    font-size: 1.25rem;
+  }
 }

@@ -351,6 +351,10 @@ body {
   letter-spacing: 1px;
 }
 
+ul {
+  list-style: none;
+}
+
 h1 {
   margin: 0;
 }
@@ -361,6 +365,26 @@ h1 {
 .navigation .fa-bars {
   font-size: 2rem;
   color: #faf6e9;
+}
+
+.nav-links-s {
+  background-color: #080400;
+  width: 65vw;
+  height: 100vh;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding-top: 5.45rem;
+}
+.nav-links-s .active {
+  color: #C2A06D;
+}
+.nav-links-s li {
+  font-style: italic;
+  padding: 1.45rem;
+  font-size: 1.25rem;
 }
 
 .container {
