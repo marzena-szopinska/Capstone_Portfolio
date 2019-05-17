@@ -1,5 +1,6 @@
 header {
   color: $white-color;
   background-color: $black-color;
-  @include fixed;
+  @include fixed($top: 0);
+  @include space-inside($top: 1rem, $bottom: 1rem);
 }

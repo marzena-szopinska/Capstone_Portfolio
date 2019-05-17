@@ -6,6 +6,10 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/main.jpg') no-repeat center;
   background-size: cover;
 
+  #content {
+    @include center-content($top: 42%);
+  }
+
   h1 {
     color: $white-color;
     text-transform: uppercase;
