@@ -11,16 +11,20 @@ main {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC') repeat;;
 
     #content {
-      @include center-content($top: 42%);
+      @include center-content($top: 50%);
       .intro {
         p {
           color: $gold-color;
           font-style: italic;
+          font-size: 1.35rem;
         }
         h1 {
+          font-family: 'Cinzel', serif;
           color: $white-color;
           @include uppercase;
-          font-size: 3rem;
+          font-size: 3.45rem;
+          margin-top: 1.45rem;
+          margin-bottom: 1.45rem;
         }
         h3 {
           @include uppercase;
@@ -30,6 +34,7 @@ main {
       }
       .next {
         .plus {
+          margin-top: 100px;
           font-size: 3rem;
           color: $white-color;
         }
