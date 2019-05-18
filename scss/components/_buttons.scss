@@ -1,6 +1,6 @@
 .btn {
   @include center-text;
-  color: $gold-color;
+  color: $black-color;
   font-style: italic;
   margin-top: 3rem;
   margin-left: auto;
@@ -8,5 +8,5 @@
   display: block;
   width: 200px;
   padding: 1.5rem;
-  background-color: $black-color;
+  background-color: $white-color;
 }

@@ -1,9 +1,12 @@
 section {
   width: 100%;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  @include space-inside($top: 7rem, $bottom: 7rem);
 }
 
 .image-background {
-  
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/image-between.jpg') no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
 }

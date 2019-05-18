@@ -346,7 +346,7 @@ template {
 body {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
-  line-height: 1;
+  line-height: 1.5;
   letter-spacing: 1px;
 }
 @media (min-width: 768px) {
@@ -372,7 +372,10 @@ h1 {
   width: 100%;
   text-align: right;
   background-color: #080400;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
   color: #faf6e9;
   position: fixed;
   top: 0;
@@ -395,7 +398,10 @@ h1 {
 }
 @media (min-width: 1024px) {
   .navigation {
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -537,13 +543,21 @@ footer .f-name {
 
 section {
   width: 100%;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.image-background {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/image-between.jpg") no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .btn {
   text-align: center;
-  color: #C2A06D;
+  color: #080400;
   font-style: italic;
   margin-top: 3rem;
   margin-left: auto;
@@ -551,23 +565,59 @@ section {
   display: block;
   width: 200px;
   padding: 1.5rem;
-  background-color: #080400;
+  background-color: #faf6e9;
 }
 
 #about {
   color: #faf6e9;
-  background-color: #C2A06D;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/black.jpg") no-repeat center;
   text-align: center;
+}
+#about .container {
+  border: 2px solid #faf6e9;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  #about .container {
+    padding-top: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+  }
 }
 #about h2 {
   font-family: "Cinzel", serif;
   text-transform: uppercase;
-  font-size: 2.75rem;
+  font-size: 2.45rem;
+}
+@media (min-width: 1024px) {
+  #about h2 {
+    font-size: 3.75rem;
+  }
 }
 #about h4 {
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
   font-weight: 200;
   font-style: italic;
+  color: #C2A06D;
+}
+@media (min-width: 1024px) {
+  #about h4 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  #about p {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

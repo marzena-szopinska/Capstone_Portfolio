@@ -2,7 +2,7 @@
   width: 100%;
   text-align: right;
   background-color: $black-color;
-  padding: 1rem;
+  @include space-inside($top: 1rem, $right: 1rem, $bottom: 1rem, $left: 1rem);
   color: $white-color;
   position: fixed;
   top:0;
@@ -22,7 +22,7 @@
       }
    }
   @media (min-width: 1024px){
-    padding: 2rem;
+    @include space-inside($top: 2rem, $right: 2rem, $bottom: 2rem, $left: 2rem);
   }
 }
 
