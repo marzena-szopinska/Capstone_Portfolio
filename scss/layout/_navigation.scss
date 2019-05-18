@@ -17,6 +17,7 @@
       align-items: center;
       li {
         font-style: italic;
+        font-size: 1rem;
         @include space-inside($right: 1rem, $left: 1rem);
       }
    }
