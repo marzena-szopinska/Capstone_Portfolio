@@ -1,12 +1,9 @@
 .container {
   width: 100%;
   padding: 1rem;
-}
 
-#about, #projects, #contact {
-  @media (min-width: 1024px){
-    max-width: 1024px;
-    width: 80%;
+  @media(min-width: 1024px){
     margin: 0 auto;
+    max-width: 900px;
   }
 }
