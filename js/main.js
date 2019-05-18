@@ -17,7 +17,6 @@ hamburger.addEventListener('click', () => {
 
 
 const navigation = document.querySelector('.navigation');
-const container = navigation.children[0];
 const header = document.querySelector('header');
 const body =  document.querySelector('body');
 const links = ['Home', 'About', 'Projects', 'Contact'];
@@ -40,7 +39,7 @@ for(let i = 0; i < links.length; i++) {
 function adjust(media) {
   if (media.matches) {
     navList.setAttribute('class', 'nav-links-l');
-    container.appendChild(navList);
+    navigation.appendChild(navList);
     hamburger.style.display = 'none';
   } else {
     navList.setAttribute('class', 'nav-links-s');

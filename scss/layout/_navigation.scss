@@ -1,6 +1,7 @@
 .navigation {
   text-align: right;
   background-color: $black-color;
+  padding: 1rem;
   .fas {
     font-size: 2rem;
     color: $white-color;
@@ -16,13 +17,13 @@
       }
    }
   @media (min-width: 1024px){
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
 .nav-links-s {
   background-color: $black-color;
-  width: 50vw;
+  width: 65vw;
   height: 100vh;
   color: white;
   position: absolute;
@@ -32,13 +33,17 @@
   @include space-inside($top: 5.45rem);
   // animate opacity and transform
   opacity: 0;
-  transform: translateX(-300px);
+  transform: translateX(-350px);
   transition: transform .5s linear, opacity .25s linear;
 
   li {
     font-style: italic;
     @include space-inside($top: 1.45rem, $right: 1.45rem, $bottom: 1.45rem, $left: 1.45rem);
     font-size: 1.25rem;
+  }
+
+  @media (min-width: 768px){
+    width: 45vw;
   }
 }
 

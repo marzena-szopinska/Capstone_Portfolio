@@ -28,6 +28,10 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin center-text {
+  text-align: center;
+}
+
 @mixin uppercase {
   text-transform: uppercase;
 }

@@ -1,13 +1,13 @@
 footer {
-  text-align: center;
-  font-style: italic;
-  color: $brown-color;
-  @include fixed($bottom: 0);
-  @include space-inside($top: 1rem, $bottom: 1rem);
-  background-color: $black-color;
-
-  .f-name {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+  // text-align: center;
+  // font-style: italic;
+  // color: $brown-color;
+  // @include fixed($bottom: 0);
+  // @include space-inside($top: 1rem, $bottom: 1rem);
+  // background-color: $black-color;
+  //
+  // .f-name {
+  //   font-weight: bold;
+  //   text-transform: uppercase;
+  // }
 }

@@ -344,7 +344,6 @@ template {
 }
 
 body {
-  position: relative;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   line-height: 1;
@@ -372,6 +371,7 @@ h1 {
 .navigation {
   text-align: right;
   background-color: #080400;
+  padding: 1rem;
 }
 .navigation .fas {
   font-size: 2rem;
@@ -390,13 +390,13 @@ h1 {
 }
 @media (min-width: 1024px) {
   .navigation {
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
 .nav-links-s {
   background-color: #080400;
-  width: 50vw;
+  width: 65vw;
   height: 100vh;
   color: white;
   position: absolute;
@@ -405,7 +405,7 @@ h1 {
   z-index: 1000;
   padding-top: 5.45rem;
   opacity: 0;
-  transform: translateX(-300px);
+  transform: translateX(-350px);
   transition: transform 0.5s linear, opacity 0.25s linear;
 }
 .nav-links-s li {
@@ -415,6 +415,11 @@ h1 {
   padding-bottom: 1.45rem;
   padding-left: 1.45rem;
   font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .nav-links-s {
+    width: 45vw;
+  }
 }
 
 .active {
@@ -428,83 +433,80 @@ h1 {
 
 .container {
   width: 100%;
-  height: 100%;
   padding: 1rem;
 }
 
+@media (min-width: 1024px) {
+  #about, #projects, #contact {
+    max-width: 1024px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 header {
-  color: #faf6e9;
   width: 100%;
-  position: fixed;
-  top: 0;
-  padding-bottom: 1rem;
-  text-align: center;
   height: 100vh;
+  color: #faf6e9;
+  position: relative;
+  /* add background */
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/main.jpg") no-repeat center;
+  background-attachment: fixed;
   background-size: cover;
 }
-header .container {
-  /* add dotted overlay */
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC") repeat;
-}
-header .container .intro-header {
+header .intro-header {
+  width: 100%;
+  /* center text inside the header */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
-header .container .intro-header .intro p {
+header .intro-header .intro {
+  width: 100%;
+  padding: 1rem;
+}
+header .intro-header .intro p {
   color: #C2A06D;
   font-style: italic;
   font-size: 1.35rem;
+  padding: 0.45rem;
 }
-header .container .intro-header .intro h1 {
+header .intro-header .intro h1 {
   font-family: "Cinzel", serif;
-  color: #faf6e9;
   text-transform: uppercase;
-  font-size: 3.25rem;
-  margin-top: 1.45rem;
-  margin-bottom: 1.45rem;
+  font-size: 2.75rem;
+  padding: 0.35rem;
+  line-height: 1;
 }
 @media (min-width: 768px) {
-  header .container .intro-header .intro h1 {
-    font-size: 5.25rem;
+  header .intro-header .intro h1 {
+    font-size: 4.75rem;
   }
 }
-header .container .intro-header .intro h3 {
+@media (min-width: 1024px) {
+  header .intro-header .intro h1 {
+    font-size: 6.75rem;
+  }
+}
+header .intro-header .intro h3 {
   text-transform: uppercase;
-  color: #faf6e9;
   font-weight: 200;
+  padding: 0.35rem;
 }
-header .container .intro-header .next .plus {
-  margin-top: 100px;
+header .intro-header .next .plus {
+  margin-top: 50px;
   font-size: 3rem;
-  color: #faf6e9;
 }
 @media (min-width: 768px) {
-  header .container .intro-header .next .plus {
-    margin-top: 75px;
+  header .intro-header {
+    width: 80%;
   }
 }
 
-footer {
-  text-align: center;
-  font-style: italic;
-  color: #716F6B;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #080400;
-}
-footer .f-name {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#about {
-  color: #faf6e9;
+section {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
