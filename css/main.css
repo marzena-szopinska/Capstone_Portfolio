@@ -369,16 +369,20 @@ h1 {
 }
 
 .navigation {
+  width: 100%;
   text-align: right;
   background-color: #080400;
   padding: 1rem;
+  color: #faf6e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 .navigation .fas {
   font-size: 2rem;
-  color: #faf6e9;
 }
 .navigation .nav-links-l {
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -395,10 +399,10 @@ h1 {
 }
 
 .nav-links-s {
+  text-align: left;
   background-color: #080400;
   width: 65vw;
   height: 100vh;
-  color: white;
   position: absolute;
   top: 0;
   left: 0;

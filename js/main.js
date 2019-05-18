@@ -34,16 +34,15 @@ for(let i = 0; i < links.length; i++) {
   link.innerHTML = links[i];
   navList.appendChild(item);
 }
+navigation.appendChild(navList);
 
 // ADJUST NAVIGATION REGARDING MEDIA QUERIES
 function adjust(media) {
   if (media.matches) {
     navList.setAttribute('class', 'nav-links-l');
-    navigation.appendChild(navList);
     hamburger.style.display = 'none';
   } else {
     navList.setAttribute('class', 'nav-links-s');
-    body.insertBefore(navList, header);
     hamburger.style.display = 'block';
   }
 }

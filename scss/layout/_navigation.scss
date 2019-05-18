@@ -1,13 +1,17 @@
 .navigation {
+  width: 100%;
   text-align: right;
   background-color: $black-color;
   padding: 1rem;
+  color: $white-color;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1000;
   .fas {
     font-size: 2rem;
-    color: $white-color;
   }
    .nav-links-l {
-      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -22,10 +26,10 @@
 }
 
 .nav-links-s {
+  text-align: left;
   background-color: $black-color;
   width: 65vw;
   height: 100vh;
-  color: white;
   position: absolute;
   top: 0;
   left: 0;
