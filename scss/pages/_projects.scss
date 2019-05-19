@@ -1,11 +1,8 @@
 #projects {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   @include center-text;
 
-  .container {
-
-  }
   h2 {
     font-family: 'Cinzel', serif;
     padding-bottom: 1.5rem;
@@ -22,30 +19,46 @@
     padding-bottom: 1rem;
 
     .card {
+      width: 100%;
       position: relative;
       margin-top: 2rem;
       margin-bottom: 2rem;
       overflow: hidden;
-
       img {
-        height: 100%;
+          transform: scale(1.15);
+          transition: transform 1s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+
+      &:hover .overlay {
+        transform: scaleY(1);
+      }
+      &:hover .overlay .btn {
+        transform: translateX(0);
       }
       .overlay {
+        transition: transform 1s ease;
+        transform: scaleY(0);
         padding: 2rem;
-        background-color: rgba($gold-color, 0.9);
+        background-color: rgba($gold-color, 0.7);
         width: 100%;
-        height: 98%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
-
-        @media(min-width: 768px){
-          height: 99%;
-        }
-
+        box-shadow: inset 0 0 15px $black-color;
+        z-index: 100;
         .btn {
+          transition: transform 1s .7s ease;
+          transform: translateX(275px);
           margin-top: 1.5rem;
           padding: 1rem;
+          background-color: $black-color;
+          color: $white-color;
+
         }
       }
     }

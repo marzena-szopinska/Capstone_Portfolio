@@ -5,10 +5,9 @@
 
   .container {
     border: 2px solid $white-color;
+width: 90%;
+margin: 0 auto;
     @include space-inside($top: 2rem, $right: 2rem, $bottom: 2rem, $left: 2rem);
-    width: 90%;
-    margin: 0 auto;
-
     @media(min-width: 1024px){
       @include space-inside($top: 5rem, $right: 5rem, $bottom: 5rem, $left: 5rem);
     }
