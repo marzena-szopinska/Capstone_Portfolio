@@ -58,9 +58,31 @@
           padding: 1rem;
           background-color: $black-color;
           color: $white-color;
+          @media(min-width: 768px){
+            transform: translateX(475px);
+          }
+        }
 
+        h4{
+          text-transform: uppercase;
+        }
+
+        @media(min-width: 768px){
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
       }
+      @media(min-width: 1024px){
+        width: 46%;
+      }
+    }
+    @media(min-width: 768px){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
     }
   }
 }

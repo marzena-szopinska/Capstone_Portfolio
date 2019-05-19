@@ -691,5 +691,33 @@ section {
   background-color: #080400;
   color: #faf6e9;
 }
+@media (min-width: 768px) {
+  #projects .cards .card .overlay .btn {
+    transform: translateX(475px);
+  }
+}
+#projects .cards .card .overlay h4 {
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  #projects .cards .card .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  #projects .cards .card {
+    width: 46%;
+  }
+}
+@media (min-width: 768px) {
+  #projects .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
