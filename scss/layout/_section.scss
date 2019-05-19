@@ -1,11 +1,11 @@
 section {
   width: 100%;
-  @include space-inside($top: 7rem, $bottom: 7rem);
+  @include space-inside($top: 3rem, $bottom: 3rem);
 }
 
 .image-background {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/image-between.jpg') no-repeat center;
   background-attachment: fixed;
   background-size: cover;

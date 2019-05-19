@@ -1,0 +1,17 @@
+#contact {
+  color: $white-color;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/background-projects.jpg') no-repeat center;
+  .phone {
+    
+  }
+  form {
+    input {
+      display: block;
+      width: 100%;
+    }
+    textarea {
+      display: block;
+      width: 100%;
+    }
+  }
+}

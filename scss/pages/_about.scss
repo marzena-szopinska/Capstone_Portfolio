@@ -1,12 +1,13 @@
 #about {
+  @include space-inside($top: 7rem, $bottom: 7rem);
   color: $white-color;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/black.jpg') no-repeat center;
   @include center-text;
 
   .container {
     border: 2px solid $white-color;
-width: 90%;
-margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
     @include space-inside($top: 2rem, $right: 2rem, $bottom: 2rem, $left: 2rem);
     @media(min-width: 1024px){
       @include space-inside($top: 5rem, $right: 5rem, $bottom: 5rem, $left: 5rem);
