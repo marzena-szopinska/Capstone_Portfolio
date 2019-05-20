@@ -1,7 +1,7 @@
 #about {
-  @include space-inside($top: 7rem, $bottom: 7rem);
+  @include space-inside($top: 6rem, $bottom: 7rem);
   color: $white-color;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/black.jpg') no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bg-l.jpg') no-repeat center;
   @include center-text;
 
   .container {
