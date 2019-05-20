@@ -46,6 +46,7 @@
 .btn-black {
   background-color: $black-color;
   color: $white-color;
+
   &::after {
     background-color: $black-color;
   }
