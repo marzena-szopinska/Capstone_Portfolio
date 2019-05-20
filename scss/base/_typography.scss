@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  @include space-outside($top: 0, $bottom: 0, $right: 0, $left: 0);
+  @include space-inside($top: 0, $bottom: 0, $right: 0, $left: 0);
   box-sizing: border-box;
 }
 
@@ -31,7 +31,7 @@ ul {
 }
 
 h1 {
-  margin: 0;
+  @include space-outside($top: 0, $bottom: 0, $right: 0, $left: 0);
 }
 
 img {
@@ -39,8 +39,7 @@ img {
 }
 
 hr {
-  margin-top: 5px;
-  margin-bottom: 15px;
+  @include space-outside($top: 5px, $bottom: 15px);
   background-color: $white-color;
   @media(min-width: 768px){
     width: 55%;

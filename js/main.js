@@ -7,14 +7,15 @@ hamburger.addEventListener('click', () => {
   if(clicked) {
     // change hamburger icon into cross
     hamburger.setAttribute('class', 'fas fa-times');
+    // add the show class to the navigation
     navList.setAttribute('class', 'nav-links-s show');
   } else {
     // change cross icon into hamburger icon
     hamburger.setAttribute('class', 'fas fa-bars');
+    // remove the show class from the navigation
     navList.setAttribute('class', 'nav-links-s');
   }
 });
-
 
 const navigation = document.querySelector('.navigation');
 const header = document.querySelector('header');
@@ -26,7 +27,7 @@ const navList = document.createElement('ul');
 for(let i = 0; i < links.length; i++) {
   let item = document.createElement('li');
   let link = document.createElement('a');
-  link.setAttribute('href', '#');
+  link.setAttribute('href', `#${links[i].toLowerCase()}`);
   item.appendChild(link);
   if(links[i] === 'Home'){
     link.className += 'active';
@@ -35,6 +36,16 @@ for(let i = 0; i < links.length; i++) {
   navList.appendChild(item);
 }
 navigation.appendChild(navList);
+
+// CLOSE NAVIGATION WHEN LINK TO DIFFERENT SECTION HAS BEEN CLICKED
+navList.addEventListener('click', (e)=> {
+  if(e.target.tagName === 'A'){
+    navList.setAttribute('class', 'nav-links-s');
+    clicked = false;
+    // change cross icon into hamburger icon
+    hamburger.setAttribute('class', 'fas fa-bars');
+  }
+});
 
 // ADJUST NAVIGATION REGARDING MEDIA QUERIES
 function adjust(media) {
