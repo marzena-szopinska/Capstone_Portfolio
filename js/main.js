@@ -47,10 +47,7 @@ navList.addEventListener('click', (e)=> {
         // change cross icon into hamburger icon
         hamburger.setAttribute('class', 'fas fa-bars');
       }
-
-
   }
-
 });
 
 // ADJUST NAVIGATION REGARDING MEDIA QUERIES

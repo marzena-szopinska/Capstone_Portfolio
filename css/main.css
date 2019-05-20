@@ -367,9 +367,9 @@ body {
 }
 
 a {
+  transition: color 0.3s ease-out;
   text-decoration: none;
   color: #faf6e9;
-  transition: color 0.3s ease-out;
 }
 a:hover {
   color: #C2A06D;
@@ -615,6 +615,40 @@ section {
   display: block;
   width: 200px;
   padding: 1rem;
+  transition: all 0.2s;
+  position: relative;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(8, 4, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(8, 4, 0, 0.2);
+}
+.btn::after {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #faf6e9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-black {
+  background-color: #080400;
+  color: #faf6e9;
+}
+.btn-black::after {
+  background-color: #080400;
 }
 
 #about {
@@ -728,9 +762,6 @@ section {
   transition: transform 0.7s 0.7s ease;
   transform: translateX(300px);
   margin-top: 1.5rem;
-  padding: 1rem;
-  background-color: #080400;
-  color: #faf6e9;
 }
 @media (min-width: 768px) {
   #projects .cards .card .overlay .btn {

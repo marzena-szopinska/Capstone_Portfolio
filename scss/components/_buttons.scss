@@ -7,4 +7,46 @@
   display: block;
   width: 200px;
   padding: 1rem;
+  transition: all .2s;
+  position: relative;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba($black-color, .2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba($black-color, .2);
+  }
+
+  &::after {
+    // make a copy of the button
+    content: ' ';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: $white-color;
+    // position it 'inside' the bottom
+    position: absolute;
+    top: 0;
+    left: 0;
+    // position it behind the button
+    z-index: -1;
+    transition: all .4s;
+  }
+
+  &:hover::after {
+    // scale up the copy of the button
+    transform: scaleX(1.4) scaleY(1.6);
+    // fades out
+    opacity: 0;
+  }
+}
+
+.btn-black {
+  background-color: $black-color;
+  color: $white-color;
+  &::after {
+    background-color: $black-color;
+  }
 }

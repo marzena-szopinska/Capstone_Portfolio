@@ -50,11 +50,7 @@
         .btn {
           transition: transform .7s .7s ease;
           transform: translateX(300px);
-
           margin-top: 1.5rem;
-          padding: 1rem;
-          background-color: $black-color;
-          color: $white-color;
           @media(min-width: 768px){
             transform: translateX(475px);
           }

@@ -18,9 +18,10 @@ body {
 }
 
 a {
+  transition: color .3s ease-out;
   text-decoration: none;
   color: $white-color;
-  transition: color .3s ease-out;
+
   &:hover {
     color: $gold-color;
   }
