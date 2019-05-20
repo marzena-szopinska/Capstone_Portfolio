@@ -651,6 +651,49 @@ section {
   background-color: #080400;
 }
 
+.social {
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+.social .fb {
+  color: #395795;
+}
+.social .fb:hover {
+  color: #24375e;
+}
+.social .lidi {
+  color: #0e73a3;
+}
+.social .lidi:hover {
+  color: #08415d;
+}
+.social .twi {
+  color: #00a7e7;
+}
+.social .twi:hover {
+  color: #00709b;
+}
+.social .fab {
+  font-size: 1.4rem;
+  margin-right: 0.7rem;
+  margin-left: 0.7rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
+}
+@media (min-width: 768px) {
+  .social .fab {
+    font-size: 2rem;
+    margin: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+  }
+}
 #about {
   padding-top: 6rem;
   padding-bottom: 7rem;

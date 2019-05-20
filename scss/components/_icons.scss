@@ -1,0 +1,51 @@
+.social {
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+
+  .fb {
+    color: $fb-color;
+    &:hover {
+      color: darken($fb-color, 15%);
+    }
+  }
+
+  .lidi {
+    color: $linkedin-color;
+    &:hover {
+      color: darken($linkedin-color, 15%);
+    }
+  }
+
+  .twi {
+    color: $twitter-color;
+    &:hover {
+      color: darken($twitter-color, 15%);
+    }
+  }
+
+.fab {
+  font-size: 1.4rem;
+  margin-right: .7rem;
+  margin-left: .7rem;
+  margin-bottom: .4rem;
+  margin-top: .4rem;
+
+  @media(min-width: 768px){
+    font-size: 2rem;
+    margin: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: .7rem;
+    margin-top: .7rem;
+  }
+}
+
+
+  @media(min-width: 768px){
+
+  }
+}
