@@ -39,12 +39,18 @@ navigation.appendChild(navList);
 
 // CLOSE NAVIGATION WHEN LINK TO DIFFERENT SECTION HAS BEEN CLICKED
 navList.addEventListener('click', (e)=> {
-  if(e.target.tagName === 'A'){
-    navList.setAttribute('class', 'nav-links-s');
-    clicked = false;
-    // change cross icon into hamburger icon
-    hamburger.setAttribute('class', 'fas fa-bars');
+  if(navList.className === 'nav-links-s show'){
+    if(e.target.tagName === 'A'){
+
+        navList.setAttribute('class', 'nav-links-s');
+        clicked = false;
+        // change cross icon into hamburger icon
+        hamburger.setAttribute('class', 'fas fa-bars');
+      }
+
+
   }
+
 });
 
 // ADJUST NAVIGATION REGARDING MEDIA QUERIES
