@@ -377,6 +377,11 @@ hr {
   margin-bottom: 15px;
   background-color: #faf6e9;
 }
+@media (min-width: 768px) {
+  hr {
+    width: 50%;
+  }
+}
 
 .navigation {
   width: 100%;

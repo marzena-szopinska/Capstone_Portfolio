@@ -35,4 +35,7 @@ hr {
   margin-top: 5px;
   margin-bottom: 15px;
   background-color: $white-color;
+  @media(min-width: 768px){
+    width: 50%;
+  }
 }
