@@ -67,12 +67,10 @@ media.addListener(adjust);
 
 
 // jQuery SMOOTH SCROLL
-// grab links inside the navigation bar
-$('ul a').on('click', function(e){
+$('ul a, .plus a').on('click', function(e){
   if(this.hash !== ''){
     e.preventDefault();
     const hash = this.hash;
-
     $('html, body').animate(
       {
         scrollTop: $(hash).offset().top
