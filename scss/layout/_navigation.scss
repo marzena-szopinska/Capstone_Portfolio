@@ -4,17 +4,12 @@
   background-color: $black-color;
   @include space-inside($top: 1rem, $right: 1rem, $bottom: 1rem, $left: 1rem);
   color: $white-color;
-  position: fixed;
-  top:0;
-  left: 0;
-  z-index: 1000;
+  @include fixed($top: 0, $left: 0, $z: 1000);
   .fas {
     font-size: 2rem;
   }
    .nav-links-l {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexy($just: center, $align: center);
       li {
         font-style: italic;
         font-size: 1rem;
@@ -31,10 +26,7 @@
   background-color: $black-color;
   width: 65vw;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  @include absolute($top: 0, $left: 0, $z: 1000);
   @include space-inside($top: 5.45rem);
   // animate opacity and transform
   opacity: 0;

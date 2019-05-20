@@ -363,6 +363,10 @@ body {
 a {
   text-decoration: none;
   color: #faf6e9;
+  transition: color 0.3s ease-out;
+}
+a:hover {
+  color: #C2A06D;
 }
 
 ul {
@@ -384,7 +388,7 @@ hr {
 }
 @media (min-width: 768px) {
   hr {
-    width: 50%;
+    width: 55%;
   }
 }
 
@@ -397,6 +401,7 @@ hr {
   padding-bottom: 1rem;
   padding-left: 1rem;
   color: #faf6e9;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -511,7 +516,10 @@ header .intro-header .intro p {
   color: #C2A06D;
   font-style: italic;
   font-size: 1.35rem;
-  padding: 0.45rem;
+  padding-top: 0.45rem;
+  padding-right: 0.45rem;
+  padding-bottom: 0.45rem;
+  padding-left: 0.45rem;
 }
 @media (min-width: 1024px) {
   header .intro-header .intro p {
@@ -522,7 +530,10 @@ header .intro-header .intro h1 {
   font-family: "Cinzel", serif;
   text-transform: uppercase;
   font-size: 2.75rem;
-  padding: 0.35rem;
+  padding-top: 0.35rem;
+  padding-right: 0.35rem;
+  padding-bottom: 0.35rem;
+  padding-left: 0.35rem;
   line-height: 1;
 }
 @media (min-width: 768px) {
@@ -538,7 +549,10 @@ header .intro-header .intro h1 {
 header .intro-header .intro h3 {
   text-transform: uppercase;
   font-weight: 200;
-  padding: 0.35rem;
+  padding-top: 0.35rem;
+  padding-right: 0.35rem;
+  padding-bottom: 0.35rem;
+  padding-left: 0.35rem;
 }
 header .intro-header .next .plus {
   margin-top: 50px;
@@ -649,6 +663,7 @@ section {
 }
 
 #projects {
+  background-color: #faf6e9;
   text-align: center;
 }
 #projects h2 {
@@ -739,8 +754,8 @@ section {
 }
 
 #contact {
-  padding-bottom: 7rem;
   padding-top: 5rem;
+  padding-bottom: 7rem;
   color: #faf6e9;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bg.jpg") no-repeat center;
 }
@@ -794,14 +809,17 @@ section {
   width: 100%;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
   background-color: transparent;
 }
 #contact form button {
-  padding-left: 2rem;
+  padding-top: 0.5rem;
   padding-right: 2rem;
   padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding-left: 2rem;
   /* push the button to the right */
   margin-left: auto;
   width: 40%;

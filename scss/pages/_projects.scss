@@ -1,4 +1,5 @@
 #projects {
+  background-color: $white-color;
   @include center-text;
   h2 {
     font-family: 'Cinzel', serif;
@@ -83,7 +84,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
     }
   }
 }

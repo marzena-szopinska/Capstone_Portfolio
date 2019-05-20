@@ -28,7 +28,7 @@ header {
         color: $gold-color;
         font-style: italic;
         font-size: 1.35rem;
-        padding: 0.45rem;
+        @include space-inside($top: 0.45rem, $right: 0.45rem, $bottom: 0.45rem, $left: 0.45rem);
         @media (min-width: 1024px){
           font-size: 1rem;
         }
@@ -37,7 +37,7 @@ header {
         font-family: 'Cinzel', serif;
         @include uppercase;
         font-size: 2.75rem;
-        padding: 0.35rem;
+        @include space-inside($top: 0.35rem, $right: 0.35rem, $bottom: 0.35rem, $left: 0.35rem);
         line-height: 1;
         @media (min-width: 768px){
           font-size: 4.75rem;
@@ -49,7 +49,7 @@ header {
       h3 {
         @include uppercase;
         font-weight: 200;
-        padding: 0.35rem;
+        @include space-inside($top: 0.35rem, $right: 0.35rem, $bottom: 0.35rem, $left: 0.35rem);
       }
     }
     .next {

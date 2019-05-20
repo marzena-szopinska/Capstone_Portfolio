@@ -20,6 +20,10 @@ body {
 a {
   text-decoration: none;
   color: $white-color;
+  transition: color .3s ease-out;
+  &:hover {
+    color: $gold-color;
+  }
 }
 
 ul {
@@ -39,6 +43,6 @@ hr {
   margin-bottom: 15px;
   background-color: $white-color;
   @media(min-width: 768px){
-    width: 50%;
+    width: 55%;
   }
 }
