@@ -64,3 +64,20 @@ function adjust(media) {
 var media = window.matchMedia("(min-width: 1024px)")
 adjust(media);
 media.addListener(adjust);
+
+
+// jQuery SMOOTH SCROLL
+// grab links inside the navigation bar
+$('ul a').on('click', function(e){
+  if(this.hash !== ''){
+    e.preventDefault();
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      800
+  );
+  }
+});
