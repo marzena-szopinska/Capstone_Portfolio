@@ -4,8 +4,7 @@
   @include center-text;
   h2 {
     font-family: 'Cinzel', serif;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    @include space-inside($top: 1.5rem, $bottom: 1.5rem);
     @include uppercase;
     font-size: 2.45rem;
 
@@ -15,15 +14,12 @@
   }
 
   .cards {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
+    @include space-inside($top: 1rem, $bottom: 1rem);
     .card {
       width: 100%;
       height: 255px;
       position: relative;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      @include space-outside($top: 2rem, $bottom: 2rem);
       overflow: hidden;
       img {
           transform: scale(1.15);
@@ -45,8 +41,8 @@
       .overlay {
         transition: transform .7s ease;
         transform: scaleY(0);
-        padding: 1rem;
-        background-color: rgba($gold-color, 0.8);
+        @include space-inside($top: 1rem, $right: 1rem, $bottom: 1rem, $left: 1rem);
+        background-color: rgba($gold-color, 0.9);
         width: 100%;
         height: 100%;
         @include absolute($top: 0, $left: 0, $z: 100);
@@ -54,14 +50,12 @@
         .btn {
           transition: transform .7s .7s ease;
           transform: translateX(500px);
-          // animation: moveInRight .7s ease .7s;
-          // animation-fill-mode: backwards;
-          margin-top: 1.5rem;
+          @include space-outside($top: 1.5rem);
         }
 
         h4{
           text-transform: uppercase;
-          margin-bottom: 10px;
+          @include space-outside($bottom: 10px);
         }
 
         @media(min-width: 768px){
@@ -78,9 +72,8 @@
     }
 
     @media(min-width: 768px){
-      display: flex;
+      @include flexy($just: space-between);
       flex-wrap: wrap;
-      justify-content: space-between;
     }
   }
 }
