@@ -1,5 +1,5 @@
 
-header {
+#home {
   width: 100%;
   height: 100vh;
   color: $white-color;
@@ -50,13 +50,13 @@ header {
 
       .first-name {
         @include space-inside($top: 0.35rem, $right: 0.35rem, $bottom: 0, $left: 0.35rem);
-        animation: moveInLeft .9s .9s ease-out;
+        animation: moveInLeft 1.2s .9s ease-out;
         animation-fill-mode: backwards;
       }
 
       .last-name {
         @include space-inside($top: 0, $right: 0.35rem, $bottom: 0.35rem, $left: 0.35rem);
-        animation: moveInRight .9s .9s ease-out;
+        animation: moveInRight 1.2s .9s ease-out;
         animation-fill-mode: backwards;
       }
       h3 {
@@ -82,7 +82,7 @@ header {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(110px);
   }
   80% {
     transform: translateX(-15px);
@@ -97,7 +97,7 @@ header {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-110px);
   }
   80% {
     transform: translateX(15px);

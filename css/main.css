@@ -492,7 +492,7 @@ hr {
   }
 }
 
-header {
+#home {
   width: 100%;
   height: 100vh;
   color: #faf6e9;
@@ -504,13 +504,13 @@ header {
   animation: fadeIn 1.5s ease;
   backface-visibility: hidden;
 }
-header .dotted-overlay {
+#home .dotted-overlay {
   width: 100%;
   height: 100%;
   /* add dotted overlay */
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC") repeat;
 }
-header .intro-header {
+#home .intro-header {
   width: 100%;
   /* center text inside the header */
   position: absolute;
@@ -519,11 +519,11 @@ header .intro-header {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-header .intro-header .intro {
+#home .intro-header .intro {
   width: 100%;
   padding: 1rem;
 }
-header .intro-header .intro p {
+#home .intro-header .intro p {
   color: #C2A06D;
   font-style: italic;
   font-size: 1.35rem;
@@ -533,43 +533,43 @@ header .intro-header .intro p {
   padding-left: 0.45rem;
 }
 @media (min-width: 1024px) {
-  header .intro-header .intro p {
+  #home .intro-header .intro p {
     font-size: 1rem;
   }
 }
-header .intro-header .intro .first-name, header .intro-header .intro .last-name {
+#home .intro-header .intro .first-name, #home .intro-header .intro .last-name {
   font-family: "Cinzel", serif;
   text-transform: uppercase;
   font-size: 2.75rem;
   line-height: 1;
 }
 @media (min-width: 768px) {
-  header .intro-header .intro .first-name, header .intro-header .intro .last-name {
+  #home .intro-header .intro .first-name, #home .intro-header .intro .last-name {
     font-size: 4.75rem;
   }
 }
 @media (min-width: 1024px) {
-  header .intro-header .intro .first-name, header .intro-header .intro .last-name {
+  #home .intro-header .intro .first-name, #home .intro-header .intro .last-name {
     font-size: 6.75rem;
   }
 }
-header .intro-header .intro .first-name {
+#home .intro-header .intro .first-name {
   padding-top: 0.35rem;
   padding-right: 0.35rem;
   padding-bottom: 0;
   padding-left: 0.35rem;
-  animation: moveInLeft 0.9s 0.9s ease-out;
+  animation: moveInLeft 1.2s 0.9s ease-out;
   animation-fill-mode: backwards;
 }
-header .intro-header .intro .last-name {
+#home .intro-header .intro .last-name {
   padding-top: 0;
   padding-right: 0.35rem;
   padding-bottom: 0.35rem;
   padding-left: 0.35rem;
-  animation: moveInRight 0.9s 0.9s ease-out;
+  animation: moveInRight 1.2s 0.9s ease-out;
   animation-fill-mode: backwards;
 }
-header .intro-header .intro h3 {
+#home .intro-header .intro h3 {
   text-transform: uppercase;
   font-weight: 200;
   padding-top: 0.35rem;
@@ -577,12 +577,12 @@ header .intro-header .intro h3 {
   padding-bottom: 0.35rem;
   padding-left: 0.35rem;
 }
-header .intro-header .next .plus {
+#home .intro-header .next .plus {
   margin-top: 50px;
   font-size: 3rem;
 }
 @media (min-width: 768px) {
-  header .intro-header {
+  #home .intro-header {
     width: 80%;
   }
 }
@@ -590,7 +590,7 @@ header .intro-header .next .plus {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(110px);
   }
   80% {
     transform: translateX(-15px);
@@ -603,7 +603,7 @@ header .intro-header .next .plus {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-110px);
   }
   80% {
     transform: translateX(15px);
@@ -797,6 +797,7 @@ section {
 }
 
 #projects {
+  color: #080400;
   background-color: #faf6e9;
   text-align: center;
 }

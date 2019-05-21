@@ -28,9 +28,10 @@ for(let i = 0; i < links.length; i++) {
   let item = document.createElement('li');
   let link = document.createElement('a');
   link.setAttribute('href', `#${links[i].toLowerCase()}`);
+  link.setAttribute('class', `${links[i].toLowerCase()}-marker`);
   item.appendChild(link);
   if(links[i] === 'Home'){
-    link.className += 'active';
+    link.className += ' active';
   }
   link.innerHTML = links[i];
   navList.appendChild(item);
@@ -79,3 +80,20 @@ $('ul a, .plus a').on('click', function(e){
   );
   }
 });
+
+// SCROLL SPY
+const linksToPages = $('ul a'),
+    section = $('section');
+
+    $(document).on('scroll', function(){
+      let currentScrollPos = $(document).scrollTop();
+      section.each(function(){
+        const self = $(this);
+        if(self.offset().top < (currentScrollPos + 250) && (currentScrollPos + 250) < (self.offset().top + self.outerHeight())){
+          let targetClass = '.' + self.attr('class') + '-marker';
+          console.log(targetClass);
+          linksToPages.removeClass('active');
+          $(targetClass).addClass('active');
+        }
+      });
+    });
