@@ -17,6 +17,13 @@ hamburger.addEventListener('click', () => {
   }
 });
 
+// ALERT BOX
+const cvButton = document.querySelector('.cv');
+cvButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  alert('Comming soon!');
+});
+
 const navigation = document.querySelector('.navigation');
 const header = document.querySelector('header');
 const body =  document.querySelector('body');
@@ -83,17 +90,16 @@ $('ul a, .plus a').on('click', function(e){
 
 // SCROLL SPY
 const linksToPages = $('ul a'),
-    section = $('section');
+section = $('section');
 
-    $(document).on('scroll', function(){
-      let currentScrollPos = $(document).scrollTop();
-      section.each(function(){
-        const self = $(this);
-        if(self.offset().top < (currentScrollPos + 250) && (currentScrollPos + 250) < (self.offset().top + self.outerHeight())){
-          let targetClass = '.' + self.attr('class') + '-marker';
-          console.log(targetClass);
-          linksToPages.removeClass('active');
-          $(targetClass).addClass('active');
-        }
-      });
-    });
+$(document).on('scroll', function(){
+  let currentScrollPos = $(document).scrollTop();
+  section.each(function(){
+    const self = $(this);
+    if(self.offset().top < (currentScrollPos + 250) && (currentScrollPos + 250) < (self.offset().top + self.outerHeight())){
+      let targetClass = '.' + self.attr('class') + '-marker';
+      linksToPages.removeClass('active');
+      $(targetClass).addClass('active');
+    }
+  });
+});
