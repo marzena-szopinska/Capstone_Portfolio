@@ -1,6 +1,6 @@
 .social {
   position: absolute;
-  right: 0;
+  right: 5px;
   bottom: 90px;
   z-index: 100;
   @include flexy($dir:column);
