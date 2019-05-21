@@ -20,10 +20,10 @@
     }
   }
 
-  .twi {
-    color: $twitter-color;
+  .git {
+    color: $git-color;
     &:hover {
-      color: darken($twitter-color, 15%);
+      color: darken($git-color, 15%);
     }
   }
 
