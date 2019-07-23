@@ -1,3 +1,30 @@
+// FORM VALIDATION
+const inputName = document.getElementById('name');
+const inputEmail = document.getElementById('email');
+const form = document.querySelector('.form');
+// const inputsubject = document.getElementById('subject');
+const inputMessage = document.getElementById('message');
+const submitBtn = document.querySelector('.submit-btn');
+// display the button from the beggining so it wont be clickable
+submitBtn.disabled = true;
+// regular expresion for email validation
+const regEx = /\S+@\S+\.\S+/;
+
+function checkInput() {
+  if(inputName.value.trim() !== '' && regEx.test(inputEmail.value)  && inputMessage.value.trim() !== ''){
+    submitBtn.style.backgroundColor = '#fff';
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.style.backgroundColor = '#C8C8C8';
+    submitBtn.disabled = true;
+  }
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('This form is only for demonstration purpose.');
+});
+
 // CHANGE NAVIGATION ICONS
 const hamburger = document.querySelector('.fas');
 let clicked = false;

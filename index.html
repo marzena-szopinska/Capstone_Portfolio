@@ -53,19 +53,19 @@
       <div class="cards">
         <div class="card">
           <div class="overlay">
-            <h4>Portfolio Example</h4>
-            <p>Used sass, flexbox and css positioning. Added animations to every page, here I used transitions and keyframes to achieve it.</p>
-            <a href='https://marzena-szopinska.github.io/Flower_Website/' target="_blank" class="btn btn-black">Live Preview</a>
+            <h4>Our Wedding (Private Project)</h4>
+            <p>Used sass, flexbox and css positioning. Used js to implement smooth scroll behaviour, as well as to trigger fade in animation on scroll. Also used clip-path property and added image scroll.</p>
+            <a href='https://marzena-szopinska.github.io/Wedding_Page/' target="_blank" class="btn btn-black">Live Preview</a>
           </div>
-          <img src="images/projects/portfolio-simulation.JPG" alt='Portfolio Example'>
+          <img src="images/projects/portfolio-images/Wedding.jpg" alt='Our Wedding Project'>
         </div>
         <div class="card">
           <div class="overlay">
-            <h4>Employee Directory</h4>
-            <p>Used JavaScript to create an employee directory by communicating with a third-party API.</p>
-            <a href='https://marzena-szopinska.github.io/Employee_Directory/' target="_blank" class="btn btn-black">Live Preview</a>
+            <h4>Employee Directory (Private Project)</h4>
+            <p>Recreated the employee directory using React. Used CSS grid to layout the content as well as fetch to get twelve random people from a different source to use in my application.</p>
+            <a href='https://github.com/marzena-szopinska/Employee_Directory_React' target="_blank" class="btn btn-black">Comming Soon</a>
           </div>
-          <img src="images/projects/employee-directory.JPG" alt='Employee Directory'>
+          <img src="images/projects/portfolio-images/ReactApp.jpg" alt='React Employee Directory'>
         </div>
         <div class="card">
           <div class="overlay">
@@ -73,7 +73,7 @@
             <p>Used JavaScript and jQuery. Added a search area where photos hide and show depending on user input. Also used lighbox.</p>
             <a href='https://marzena-szopinska.github.io/Photo_Gallery/' target="_blank" class="btn btn-black">Live Preview</a>
           </div>
-          <img src="images/projects/gallery.JPG" alt='Photo Gallery'>
+          <img src="images/projects/portfolio-images/Gallery.jpg" alt='Photo Gallery'>
         </div>
         <div class="card">
           <div class="overlay">
@@ -89,7 +89,15 @@
             <p>Used advanced web techniques including SVG graphics and JavaScript programming.</p>
             <a href='https://marzena-szopinska.github.io/WebDash_Board/' target="_blank" class="btn btn-black">Live Preview</a>
           </div>
-          <img src="images/projects/web-dash.JPG" alt='Dashboard Application'>
+          <img src="images/projects/portfolio-images/Dashboard.jpg" alt='Dashboard Application'>
+        </div>
+        <div class="card">
+          <div class="overlay">
+            <h4>React Portfolio (Private)</h4>
+            <p>Single Page Application using React Router. Used sass to style the page.</p>
+            <a href='https://github.com/marzena-szopinska/SPA_Simple_React_Portfolio' target="_blank" class="btn btn-black">Comming Soon</a>
+          </div>
+          <img src="images/projects/portfolio-images/Dashboard.jpg" alt='Dashboard Application'>
         </div>
         <div class="card">
           <div class="overlay">
@@ -97,7 +105,7 @@
             <p>The project has been built using grid, flexbox and SASS.</p>
             <a href='https://marzena-szopinska.github.io/Web_Style_Guide/' target="_blank" class="btn btn-black">Live Preview</a>
           </div>
-          <img src="images/projects/web-style-guide.JPG" alt='Web Style Guide'>
+          <img src="images/projects/portfolio-images/WebStyle.jpg" alt='Web Style Guide'>
         </div>
       </div>
     </div>
@@ -115,12 +123,12 @@
         <div class="message">
           <p class="first">You Can Also Leave A Message Here</p>
           <hr>
-          <form>
-            <input type="text" name="name" id="name" placeholder="Name">
-            <input type="email" name="email" id="email" placeholder="Email">
+          <form class="form">
+            <input type="text" name="name" id="name" placeholder="Name (required)" oninput='checkInput()'>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com (required)" oninput='checkInput()'>
             <input type="text" name="subject" id="subject" placeholder="Subject">
-            <textarea rows="4" cols="50" placeholder="Message"></textarea>
-            <button type="submit">Submit</button>
+            <textarea rows="4" cols="50" placeholder="Message (required)" id='message' oninput='checkInput()'></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
           </form>
         </div>
       </div>

@@ -35,12 +35,14 @@
     font-style: italic;
     color: $gold-color;
   }
+
   form {
     @include flexy($dir: column);
     ::placeholder{
       color: $white-color;
     }
     input, textarea {
+      color: white;
       border: 1px solid $white-color;
       display: block;
       width: 100%;
@@ -54,6 +56,7 @@
       /* push the button to the right */
       @include space-outside($left: auto);
       width: 40%;
+      background-color: #C8C8C8;
     }
   }
 }
