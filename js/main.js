@@ -45,11 +45,11 @@ hamburger.addEventListener('click', () => {
 });
 
 // ALERT BOX
-const cvButton = document.querySelector('.cv');
-cvButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  alert('Comming soon!');
-});
+// const cvButton = document.querySelector('.cv');
+// cvButton.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   alert('Comming soon!');
+// });
 
 const navigation = document.querySelector('.navigation');
 const header = document.querySelector('header');
