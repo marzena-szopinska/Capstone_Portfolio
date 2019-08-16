@@ -51,13 +51,15 @@ hamburger.addEventListener('click', () => {
 //   alert('Comming soon!');
 // });
 
+
+// GENERATE A LIST OF LINKS
 const navigation = document.querySelector('.navigation');
 const header = document.querySelector('header');
 const body =  document.querySelector('body');
 const links = ['Home', 'About', 'Projects', 'Contact'];
 const navList = document.createElement('ul');
 
-// GENERATE A LIST OF LINKS
+
 for(let i = 0; i < links.length; i++) {
   let item = document.createElement('li');
   let link = document.createElement('a');
