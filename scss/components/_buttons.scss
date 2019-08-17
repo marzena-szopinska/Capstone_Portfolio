@@ -50,16 +50,21 @@
 .btn-black {
   background-color: $black-color;
   color: $white-color;
+  padding: .7rem;
 
   &::after {
     background-color: $black-color;
+  }
+
+  @media(min-width: 768px){
+    padding: 1rem;
   }
 }
 
 
 .btn-git {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 
   &::after {
@@ -69,5 +74,10 @@
   &:hover::after {
     // scale up the copy of the button
     transform: scaleX(1.4) scaleY(1.4);
+  }
+
+  @media(min-width: 768px){
+    width: 80px;
+    height: 80px;
   }
 }

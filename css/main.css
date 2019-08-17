@@ -875,14 +875,20 @@ section {
 .btn-black {
   background-color: #080400;
   color: #faf6e9;
+  padding: 0.7rem;
 }
 .btn-black::after {
   background-color: #080400;
 }
+@media (min-width: 768px) {
+  .btn-black {
+    padding: 1rem;
+  }
+}
 
 .btn-git {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 .btn-git::after {
@@ -891,6 +897,12 @@ section {
 .btn-git:hover::after {
   -webkit-transform: scaleX(1.4) scaleY(1.4);
   transform: scaleX(1.4) scaleY(1.4);
+}
+@media (min-width: 768px) {
+  .btn-git {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .social {
@@ -944,13 +956,16 @@ section {
 }
 
 .fa-github {
-  margin-top: 10px;
+  margin-top: 2px;
+  margin-left: 1px;
   font-size: 1.4rem;
   color: #80dfb3;
 }
 @media (min-width: 768px) {
   .fa-github {
     font-size: 2rem;
+    margin-top: 10px;
+    margin-left: 0;
   }
 }
 
@@ -1064,7 +1079,7 @@ section {
 }
 #projects .cards .card {
   width: 100%;
-  height: 255px;
+  height: 200px;
   position: relative;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1124,11 +1139,16 @@ section {
   transition: transform 0.9s 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.9s 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-transform: translateX(650px);
   transform: translateX(650px);
-  margin-top: 1.5rem;
+  margin-top: 0.8rem;
 }
 #projects .cards .card .overlay .btn-git {
   -webkit-transition-delay: 0.9s;
   transition-delay: 0.9s;
+}
+@media (min-width: 768px) {
+  #projects .cards .card .overlay .btn {
+    margin-top: 1.5rem;
+  }
 }
 @media (min-width: 2560px) {
   #projects .cards .card .overlay .btn {
@@ -1284,9 +1304,4 @@ section {
   margin-left: auto;
   width: 40%;
   background-color: #C8C8C8;
-}
-@media (min-width: 2560px) {
-  #contact {
-    padding-bottom: 9rem;
-  }
 }
