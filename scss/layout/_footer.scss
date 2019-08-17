@@ -7,6 +7,12 @@ footer {
   @include space-inside($top: .5rem, $bottom: .5rem);
   background-color: $black-color;
 
+  p {
+    @media (min-width: 2560px){
+      font-size: 2rem;
+    }
+  }
+
   .f-name {
     font-weight: bold;
     text-transform: uppercase;

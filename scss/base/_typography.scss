@@ -16,6 +16,10 @@ body {
   @media (min-width: 1024px) {
     font-size: 1rem;
   }
+
+  @media (min-width: 2560px) {
+    font-size: 1.8rem;
+  }
 }
 
 a {
@@ -25,6 +29,10 @@ a {
 
   &:hover {
     color: $gold-color;
+  }
+
+  @media (min-width: 2560px) {
+    font-size: 1.8rem;
   }
 }
 

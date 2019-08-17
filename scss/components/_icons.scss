@@ -34,6 +34,11 @@
       font-size: 2rem;
       @include space-outside($top:0.7rem, $bottom:0.7rem);
     }
+
+    @media(min-width: 2056px){
+      font-size: 4rem;
+      @include space-outside($right:0.7rem);
+    }
   }
 }
 

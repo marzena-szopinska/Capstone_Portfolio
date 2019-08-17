@@ -1,4 +1,10 @@
 #projects {
+
+  .container {
+    @media(min-width: 2560px){
+      max-width: 2000px;
+    }
+  }
   color: $black-color;
   background-color: $white-color;
   @include center-text;
@@ -10,6 +16,10 @@
 
     @media(min-width: 1024px){
       font-size: 3.75rem;
+    }
+
+    @media(min-width: 2560px){
+      font-size: 5.75rem;
     }
   }
 
@@ -53,11 +63,15 @@
 
         .btn {
           transition: transform .9s .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          transform: translateX(500px);
+          transform: translateX(650px);
           @include space-outside($top: 1.5rem);
 
           &-git {
             transition-delay: .9s;
+          }
+
+          @media(min-width: 2560px){
+            @include space-outside($top: 3.5rem);
           }
         }
 
@@ -78,6 +92,9 @@
       @media(min-width: 1024px){
         width: 46%;
         height: 300px;
+      }
+      @media(min-width: 2560px){
+          height: 580px;
       }
     }
 

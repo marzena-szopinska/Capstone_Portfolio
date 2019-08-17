@@ -1,7 +1,13 @@
 #contact {
+  .container {
+    @media(min-width: 2560px){
+      max-width: 2000px;
+    }
+  }
   @include space-inside($top: 5rem, $bottom: 7rem);
   color: $white-color;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bg.jpg') no-repeat center;
+  background-size: cover;
   .contact-info {
     @media(min-width: 1024px){
       @include flexy($just: space-between);
@@ -15,6 +21,10 @@
 
     @media(min-width: 1024px){
       font-size: 3.75rem;
+    }
+
+    @media(min-width: 2560px){
+      font-size: 5.75rem;
     }
   }
   .phone {

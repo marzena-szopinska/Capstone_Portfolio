@@ -41,6 +41,10 @@
     // fades out
     opacity: 0;
   }
+
+  @media(min-width: 2056px){
+    width: 280px;
+  }
 }
 
 .btn-black {

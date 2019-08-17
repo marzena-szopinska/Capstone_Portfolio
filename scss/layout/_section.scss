@@ -9,4 +9,8 @@ section {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/image-between.jpg') no-repeat center;
   background-attachment: fixed;
   background-size: cover;
+
+  @media (min-width: 2560px){
+    height: 800px;
+  }
 }

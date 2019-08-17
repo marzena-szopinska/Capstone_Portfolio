@@ -2,6 +2,7 @@
   @include space-inside($top: 6rem, $bottom: 7rem);
   color: $white-color;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bg-l.jpg') no-repeat center;
+  background-size: cover;
   @include center-text;
 
   .container {
@@ -22,6 +23,10 @@
     @media(min-width: 1024px){
       font-size: 3.75rem;
     }
+
+    @media(min-width: 2560px){
+      font-size: 5.75rem;
+    }
   }
 
   h4 {
@@ -32,11 +37,24 @@
     @media(min-width: 1024px){
       font-size: 1rem;
     }
+
+    @media(min-width: 2560px){
+      font-size: 1.5rem;
+    }
   }
 
   p {
     @media(min-width: 1024px){
       font-size: 1rem;
     }
+
+    @media(min-width: 2560px){
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (min-width: 2560px){
+    padding-top: 9rem;
+    padding-bottom: 9rem;
   }
 }
