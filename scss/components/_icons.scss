@@ -36,3 +36,13 @@
     }
   }
 }
+
+.fa-github {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: $green-color;
+
+  @media(min-width: 768px){
+    font-size: 2rem;
+  }
+}
