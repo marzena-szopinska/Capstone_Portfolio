@@ -61,4 +61,9 @@
   &::after {
     border-radius: 50%;
   }
+
+  &:hover::after {
+    // scale up the copy of the button
+    transform: scaleX(1.4) scaleY(1.4);
+  }
 }
