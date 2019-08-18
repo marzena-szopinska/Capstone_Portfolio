@@ -812,8 +812,13 @@ section {
   height: 600px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../images/image-between.jpg") no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/image-between.jpg") no-repeat center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  .image-background {
+    background-attachment: fixed;
+  }
 }
 @media (min-width: 2560px) {
   .image-background {
